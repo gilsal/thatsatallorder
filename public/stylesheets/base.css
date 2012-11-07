@@ -4,38 +4,76 @@
 -- Wednesday, October 10, 2012
 ******************************/
 
-*			{
+*	{
+margin:0px auto;
+padding:0 0 0 0;
+}
+body	{
+margin:0 0 0 0;
+font-family: "Times New Roman", serif; background:#EFEFEF;
+font-size:16px;
+}
+h1, h2, h3, h4, h5, p{
 	margin:0 0 0 0;
 	padding:0 0 0 0;
 }
-body		{
-	font-family: "Times New Roman", serif; background:#EFEFEF;
-	font-size:16px;
-}
 
 .headerBackGround
-			{
-	margin:0 0 0 0;
-	height:100px;
-	background:#B1A17C;
+{
+margin:0 0 0 0;
+height:100px;
+background:#B1A17C;
 }
 
 .backGround	{
-	margin-left:5px;
-	margin-right:5px;
+margin-left:5px;
+margin-right:5px;
 }
 
-.content	{
-	margin:0px auto;
-	width:900px;
-	background:#B1A17C;
+.content 	{
+	max-width:90%;
+	min-width:900px;
+}
+
+.content_body{
+	width:100%;
+	background:#EFEFEF; /*#B1A17C;*/
+	border:1px solid #acacac;
 	border-radius: 5px;
 	-webkit-box-shadow: 10px 10px 5px #888;
 	box-shadow: 5px 5px 5px #888;
 }
 
-.bridge 	{
-	margin:0px auto;
-	width:100%;
-	height:4px;
+.content_body img{
+	width:300px;
+}
+
+.bridge {
+margin:0px auto;
+width:100%;
+height:4px;
+}
+
+.clear_divs	{
+	clear:both;
+}
+
+/***
+Header and Nav
+***/
+
+#nav		{
+	float:left;
+}
+#nav a 		{
+	color:#000000;
+	text-decoration:none;
+	padding-right:5px;
+}
+#nav a:hover{
+	color:#878787;
+}
+
+#header	{
+	float:left;
 }

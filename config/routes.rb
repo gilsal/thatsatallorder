@@ -6,7 +6,8 @@ Thatsatallorder::Application.routes.draw do
   
   root :to => 'pages#index'
   
-  match '/index' => 'pages#index'
+  match 'home' => 'pages#index'
+  match 'contact' => 'pages#contact'
   
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
