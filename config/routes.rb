@@ -8,6 +8,8 @@ Thatsatallorder::Application.routes.draw do
   
   match 'home' => 'pages#index'
   match 'contact' => 'pages#contact'
+  match 'about' => 'pages#about'
+  match 'staff' => 'pages#staff'
   
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
