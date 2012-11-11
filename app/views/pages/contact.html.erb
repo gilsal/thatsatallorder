@@ -1,51 +1,56 @@
-<h2>Contact</h2>
-<%= image_tag('contact/amaya.jpeg') %>
-
-<%= simple_form_for @message do |f| %>
-
-<% end %>
+<h2>Contact Us</h2>
+<div class="left">
+  <p>
+    Most general inquiries can be directed to RobRising@thatsatallorder.com
+  </p>
+  <p>
+    Questions can be directed these numbers  Office: (330)259-7529 or Cell: (419)564-4488
+  </p>
 <%= form_tag do |f| %>
-  Contact Us
   <p>
-  	<%= label_tag(:name, 'Name:') %>
-  	<%= text_field_tag :name, @name, placeholder:'Enter your Name', size: '30' %>
+    <%= label_tag(:name, 'Name:') %>
+    <%= text_field_tag :name, @name, placeholder:'Enter your Name', size: '30' %>
   </p>
   <div class="bridge"></div>
   <p>
-  	<%= label_tag(:email, 'Email:') %>
-  	<%= email_field_tag :email, @email, placeholder:'Enter your email address', size: '30' %>
+    <%= label_tag(:email, 'Email:') %>
+    <%= email_field_tag :email, @email, placeholder:'Enter your email address', size: '30' %>
   </p>
   <div class="bridge"></div>
   <p>
-  	<%= label_tag(:phone, 'Phone:') %>
-  	<%= phone_field_tag :phone, @phone, placeholder:'Enter your Phone #', size: '30' %>
+    <%= label_tag(:phone, 'Phone:') %>
+    <%= phone_field_tag :phone, @phone, placeholder:'Enter your Phone #', size: '30' %>
   </p>
   <div class="bridge"></div>
   <p>
-  	<%= label_tag(:address, 'Address:') %>
-  	<%= text_field_tag :address, @address, placeholder:'Enter your Home Address', size: '30' %>
+    <%= label_tag(:address, 'Address:') %>
+    <%= text_field_tag :address, @address, placeholder:'Enter your Home Address', size: '30' %>
   </p>
   <div class="bridge"></div>
   <p>
-  	<%= label_tag(:message, 'Message:') %>
-  	<%= text_area_tag :message, @message, placeholder:'Enter any Message', size: '30', resize:'none'%>
+    <%= label_tag(:message, 'Message:') %>
+    <%= text_area_tag :message, @message, placeholder:'Enter any Message', size: '30', resize:'none'%>
   </p>
   <p>
-  	<%= submit_tag 'Submit' %>
+    <%= submit_tag 'Submit' %>
   </p>
   <div class="bridge"></div>
   <div class="bridge"></div>
 <% end %>
 <p>
-	<%= @name %>
+  <%= @name %>
 </p>
 <p>
-	<%= @email %>
+  <%= @email %>
 </p>
 <p>
-	<%= @address %>
+  <%= @address %>
 </p>
 <p>
-	<%= @message %>
+  <%= @message %>
 </p>
-
+</div>
+<div class="right">
+  <%= image_tag('contact/amaya.jpeg')%>
+</div>
+<div class="clear_divs"></div>
