@@ -69,7 +69,7 @@ height:4px;
 }
 
 /***
-Header and Nav
+Header, Nav, Footer
 ***/
 
 #nav		{
@@ -86,4 +86,7 @@ Header and Nav
 
 #header	{
 	float:left;
+}
+.footer p{
+	margin:0px auto;
 }

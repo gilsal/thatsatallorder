@@ -14,10 +14,7 @@
 				<div class="bridge"></div>
 				<div class="bridge"></div>
 				<div class="bridge"></div>
-				<%= link_to "Home", "home" %>
-				<%= link_to "Staff", "#" %>
-				<%= link_to "About", "#" %>
-				<%= link_to "Contact", "contact" %>
+				<%= render :partial => 'nav' %>
 			</div>
 			<div id="header">
 				<h1>
@@ -32,5 +29,12 @@
 			<%= yield %>
 		</div>
 	</div>
+	<footer class="footer">
+		<div class="content">
+			<p>
+				<%= render :partial => 'nav' %>
+			</p>
+		</div>
+	</footer>
 </body>
 </html>

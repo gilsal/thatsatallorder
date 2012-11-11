@@ -9,27 +9,27 @@
 <%= form_tag do |f| %>
   <p>
     <%= label_tag(:name, 'Name:') %>
-    <%= text_field_tag :name, @name, placeholder:'Enter your Name', size: '30' %>
+    <%= text_field_tag(:name, @name, :placeholder =>'Enter your Name', :size => '30') %>
   </p>
   <div class="bridge"></div>
   <p>
     <%= label_tag(:email, 'Email:') %>
-    <%= email_field_tag :email, @email, placeholder:'Enter your email address', size: '30' %>
+    <%= email_field_tag :email, @email, :placeholder => 'Enter your email address', :size => '30' %>
   </p>
   <div class="bridge"></div>
   <p>
     <%= label_tag(:phone, 'Phone:') %>
-    <%= phone_field_tag :phone, @phone, placeholder:'Enter your Phone #', size: '30' %>
+    <%= phone_field_tag :phone, @phone, :placeholder => 'Enter your Phone #', :size => '30' %>
   </p>
   <div class="bridge"></div>
   <p>
     <%= label_tag(:address, 'Address:') %>
-    <%= text_field_tag :address, @address, placeholder:'Enter your Home Address', size: '30' %>
+    <%= text_field_tag :address, @address, :placeholder => 'Enter your Home Address', :size => '30' %>
   </p>
   <div class="bridge"></div>
   <p>
     <%= label_tag(:message, 'Message:') %>
-    <%= text_area_tag :message, @message, placeholder:'Enter any Message', size: '30', resize:'none'%>
+    <%= text_area_tag :message, @message, :placeholder => 'Enter any Message', :size => '30', :resize => 'none'%>
   </p>
   <p>
     <%= submit_tag 'Submit' %>
